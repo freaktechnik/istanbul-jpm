@@ -8,7 +8,9 @@ Run `npm install --save-dev istanbul-jpm` in the root of your extension director
 ## Usage
 The index of this module exports the Instrumenter from istanbul adapted for use
 with JPM. It does so by storing the coverage variable in a special object, that
-gets written to the disk after all tests are done.
+gets written to the disk after all tests are done. This means, that this module
+has to be packaged into the XPI file when running `jpm test` to measure coverage.
+Not that istanbul doesn't need to be packaged with it.
 ```js
 let Instrumenter = require("istanbul-jpm").Instrumenter;
 ``
