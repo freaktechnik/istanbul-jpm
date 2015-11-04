@@ -13,7 +13,7 @@ has to be packaged into the XPI file when running `jpm test` to measure coverage
 Not that istanbul doesn't need to be packaged with it.
 ```js
 let Instrumenter = require("istanbul-jpm").Instrumenter;
-``
+```
 
 The "global" that the Instrumenter wrote to can be accessed in node like this:
 ```js
