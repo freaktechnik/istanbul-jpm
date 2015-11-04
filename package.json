@@ -1,0 +1,30 @@
+{
+  "name": "istanbul-jpm",
+  "version": "0.0.1",
+  "description": "An istanbul Instrumenter for use with JPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jetpack",
+    "istanbul"
+  ],
+  "author": {
+    "name": "Martin Giger",
+    "email": "martin@humanoids.be",
+    "url": "http://humanoids.be"
+  },
+  "homepage": "https://github.com/freaktechnik/istanbul-jpm",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "istanbul": "~0.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freaktechnik/istanbul-jpm.git"
+  },
+  "bugs": {
+    "url": "https://github.com/freaktechnik/istanbul-jpm/issues"
+  }
+}
