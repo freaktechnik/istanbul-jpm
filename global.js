@@ -8,7 +8,8 @@ const system = require("sdk/system");
 exports.global = {};
 
 when(() => {
-    let stream = file.open(file.join(system.pathFor("TmpD"), "istanbul-jpm-coverage.json"), "w");
+    let coveragedir = system.env.coveragedir || system.pathFor("TmpD");
+    let stream = file.open(file.join(coveragedir, "istanbul-jpm-coverage.json"), "w");
     let string = JSON.stringify(exports.global);
     try {
         stream.write(string);

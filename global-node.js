@@ -8,7 +8,8 @@ const fs = require("fs");
 
 module.exports = {
     get global() {
-        var jsonFile = path.join(os.tmpdir(), "istanbul-jpm-coverage.json");
+        var coveragedir = process.env.coveragedir || os.tmpdir();
+        var jsonFile = path.join(coveragedir, "istanbul-jpm-coverage.json");
         return JSON.parse(fs.readFileSync(jsonFile));
     }
 };
