@@ -1,6 +1,6 @@
 {
   "name": "istanbul-jpm",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "An istanbul Instrumenter for use with JPM",
   "main": "index.js",
   "scripts": {
