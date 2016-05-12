@@ -29,6 +29,8 @@ Also uses grunt-shell to launch `jpm test`.
 module.exports = function(grunt) {
     var istanbulJpm = require("istanbul-jpm");
 
+    process.env.coveragedir = require("os").tmpdir();
+
     grunt.initConfig({
         shell: {
             jpmTest: {
@@ -63,7 +65,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('readcoverageglobal', 'Reads the coverage global JPM wrote', function() {
         global.__coverage__ = require("istanbul-jpm/global-node").global.__coverage__;
-        grunt.log.ok("Read __coverage__ global stored in /tmp/istanbul-jpm-coverage.json");
+        grunt.log.ok("Read __coverage__ global");
     });
 
     grunt.registerTask('test', ['instrument', 'shell:jpmTest', 'readcoverageglobal', 'storeCoverage', 'makeReport']);
