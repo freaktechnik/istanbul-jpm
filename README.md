@@ -1,4 +1,6 @@
 # istanbul-jpm
+[![Dependency Status](https://dependencyci.com/github/freaktechnik/istanbul-jpm/badge)](https://dependencyci.com/github/freaktechnik/istanbul-jpm)
+
 Istanbul Instrumenter and coverage export for Firefox Add-on SDK extensions
 tested with JPM.
 
