@@ -1,4 +1,6 @@
 # istanbul-jpm
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/freaktechnik/istanbul-jpm.svg)](https://greenkeeper.io/)
 [![Dependency Status](https://dependencyci.com/github/freaktechnik/istanbul-jpm/badge)](https://dependencyci.com/github/freaktechnik/istanbul-jpm)
 
 Istanbul Instrumenter and coverage export for Firefox Add-on SDK extensions
